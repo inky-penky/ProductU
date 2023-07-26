@@ -1,6 +1,5 @@
 @tailwind base;
 @tailwind components;
-
 *{
     box-sizing: border-box;
     height: fit-content;
