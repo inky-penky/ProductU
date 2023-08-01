@@ -16,13 +16,13 @@ const Navbar = () => {
   }
 
   return (
-    <div className='flex justify-between items-center w-full py-[1.5rem] lg:px-[5.3rem]'>
+    <div className='flex justify-between bg-white items-center w-full py-[1.5rem] lg:px-[5.3rem] fixed'>
         <div className='lg:w-[13rem] w-[8rem]'>
             <Image src={Logo} alt='productU_logo' />
         </div>
 
         <div className='flex flex-col justify-between lg:hidden'>
-          <div className='flex justify-end '>
+          <div className='flex justify-end'>
             <div className={`${toggle? 'hidden':'block'}`} onClick={handleClick}>
               <Image src={MobileMenu} alt="hamburger" />
             </div>
