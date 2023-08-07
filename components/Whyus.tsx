@@ -46,6 +46,7 @@ function Whyus() {
         }
       ]
     };
+    
   return (
     <div className="flex flex-col gap-5 py-5 text-center lg:py-20 lg:gap-16">
       <h1 className="font-semibold text-[2rem]">Why us?</h1>
