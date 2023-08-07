@@ -1,14 +1,17 @@
 import React from "react"
-import Hero from "./Hero"
-import Faq from "../components/Faq"
-
+import Hero from "../components/Hero"
+import Productize from "../components/Productize"
+import ToLearn from "../components/ToLearn"
+import Mentors from "../components/Mentors"
 
 
 const App = () => {
   return (
     <div className="">
       <Hero />
-      <Faq />
+      <Productize/>
+      <ToLearn/>
+      <Mentors/>
     </div>
   )
 }
