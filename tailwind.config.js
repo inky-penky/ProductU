@@ -25,7 +25,8 @@ module.exports = {
         'slate' : '#e2e8f0'
       }, 
       backgroundImage:{
-        'hero': "url('../public/bg.png')"
+        'hero': "url('../public/bg.png')",
+        'pricing': "url('../public/vectors/images/hand.webp')",
       }
     },
   },
