@@ -17,7 +17,7 @@ const Faq = () => {
   return (
     <div className="flex flex-col items-center mb-[3rem] lg:my-[5rem]">
         <div className="mb-5 lg:mb-10">
-            <h1 className=" lg:text-[2.5rem] font-medium text-[1.5rem]">Frequently asked questions!</h1>
+            <h1 className=" lg:text-[2.5rem] font-medium text-[1.5rem]">Frequently asked questions</h1>
         </div>
         {faq.map((faq, index) => (
             <div className="flex flex-col items-center gap-2" key={index}>

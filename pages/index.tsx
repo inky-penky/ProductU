@@ -6,7 +6,6 @@ import Mentors from "../components/Mentors"
 import Whyus from "../components/Whyus"
 import Faq from "../components/Faq"
 import Pricing from "../components/Pricing"
-import Footer from "../components/Footer"
 
 
 const App = () => {
@@ -16,10 +15,9 @@ const App = () => {
       <Productize/>
       <ToLearn/>
       <Mentors/>
-      {/* <Whyus /> */}
+      <Whyus />
       <Pricing />
       <Faq />
-      <Footer />
     </div>
   )
 }

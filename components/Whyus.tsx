@@ -64,18 +64,23 @@ function Whyus() {
         </Slider>
       </div>
       
-      <div className="flex items-center gap-10 font-semibold">
-        <div className="rounded-lg">
-          <Image src={APM} alt="" />
-          <p className="">Cohort APM Certification</p>
+      <div className="py-10">
+        <div className="py-10">
+          <h1 className=" text-[2rem]">What makes us Different?</h1>
         </div>
-        <div className="rounded-lg">
-          <Image src={Protothon} alt="" />
-          <p className="">Cohort APM Certification</p>
-        </div>
-        <div className="rounded-lg">
-          <Image src={Product} alt="" />
-          <p className="">Cohort APM Certification</p>
+        <div className="flex flex-col items-center justify-center gap-10 font-semibold lg:flex-row text-start">
+          <div className="rounded-lg shadow-lg shadow-gray-300">
+            <Image src={APM} alt="" />
+            <p className="pl-6 py-7 lg:text-[1.25rem]">Cohort APM Certification</p>
+          </div>
+          <div className="rounded-lg shadow-lg shadow-gray-300">
+            <Image src={Protothon} alt="" />
+            <p className="pl-6 py-7 lg:text-[1.25rem]">Protothon</p>
+          </div>
+          <div className="rounded-lg shadow-lg shadow-gray-300">
+            <Image src={Product} alt="" />
+            <p className="pl-6 py-7 lg:text-[1.25rem]">Product Talk</p>
+          </div>
         </div>
       </div>
     </div>

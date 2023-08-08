@@ -43,7 +43,7 @@ const Pricing = () => {
                       </div>: <div className='w-4'>
                         <Image src={Remove} alt=''/>
                       </div>}
-                      <p className='text-[1.1rem]'>{desc.info}</p>
+                      <p className='text-[1rem]'>{desc.info}</p>
                     </div>
                   ))}
                 </div>
