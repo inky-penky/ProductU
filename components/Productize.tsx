@@ -7,8 +7,8 @@ import meta from "../public/vectors/images/Meta.png"
 export default function Productize() {
     return(
         <section>
-            <h1 className="mb-24 text-2xl text-center">Product<span className="text-neutral-500">ize </span>U<span className="text-neutral-500">'rself and <br /> <br /> Land Your Dream Job in Top Companies</span></h1>
-            <div className="w-auto h-auto flex flex-col relative left-44 justify-around mb-12 md:flex md:flex-row md:left-0">
+            <h1 className="text-center m-0 mb-24 text-2xl">Product<span className="text-neutral-500">ize </span>U<span className="text-neutral-500">'rself and <br /> <br /> Land Your Dream Job in Top Companies</span></h1>
+            <div className="w-auto h-auto flex flex-col items-center justify-around mb-12 md:flex md:flex-row md:left-0">
                 <div className="mb-8">
                     <Image src={ama} alt="Amazon Logo" width={150}>
                     </Image>
