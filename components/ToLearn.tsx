@@ -11,7 +11,7 @@ export default function ToLearn() {
                     {
                         (data.courses).map((topic=>{
                             return(
-                                <li className="m-0 mb-3 text-sm font-extralight"><span className="text-blue-600">&#9679;  </span>{topic}</li>
+                                <li key={topic.id} className="m-0 mb-3 text-sm font-extralight"><span className="text-blue-600">&#9679;  </span>{topic.name}</li>
                             )
                             }))
                     }
@@ -22,9 +22,11 @@ export default function ToLearn() {
         )
     })
     return(
-        <section className="m-0 w-full flex flex-col justify-between items-center">
-            <h1 className="mb-10 font-semibold text-xl">What Will You Learn</h1>
+        <section className="flex flex-col justify-between items-center m-0 mt-[10.5rem] w-full">
+            <h1 className="mb-[4.5rem] font-semibold text-center text-xl">What Will You Learn</h1>
+            <div className="flex flex-col justify-between items-center md:grid md:grid-cols-2 md:-gap-x-[3rem]">
             {course}
+            </div>
         </section>
     )
 }
