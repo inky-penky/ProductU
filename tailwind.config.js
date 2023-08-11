@@ -27,7 +27,6 @@ module.exports = {
         'indigo2' : '#9FA8DA'
       }, 
       backgroundImage:{
-        'hero': "url('../public/vectors/images/bg.png')",
         'bg-pricing': "url('../public/vectors/images/hand.webp')"
       },
     },

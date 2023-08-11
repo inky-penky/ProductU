@@ -1,4 +1,4 @@
-import { priceLists } from '../components/pricelists'
+import { priceLists } from '../components/data/pricelists'
 import Image from 'next/image'
 import Flyout from '../public/vectors/svg/Frame (1).svg'
 import Correct from '../public/vectors/images/correct.png'

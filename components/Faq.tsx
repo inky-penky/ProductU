@@ -1,4 +1,4 @@
-import { faq } from '../components/faq'
+import { faq } from '../components/data/faq'
 import { useState } from 'react'
 
 
