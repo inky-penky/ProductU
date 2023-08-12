@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function Mentors() {
     const Lecturers = Data.map((Mentor, index)=>{
         return(
-                <div key={Mentor.id} className="w-[18rem] mb-4 border-2 shadow-md shadow-indigo-100 border-blue-100 p-5 px-12 rounded-[3rem] flex flex-col justify-center">
+                <div key={Mentor.id} className="w-[18rem] mb-4 border-2 shadow-md shadow-indigo-100 border-blue-100 p-5 px-12 rounded-[3rem] flex flex-col justify-center md:mb-[3rem]">
                     <div className="mb-14 flex justify-items-center">
                         <Image className="border-teal-100 border-[1rem] rounded-full" src={Mentor.image} alt="" width={130}></Image>           
                     </div>
@@ -19,9 +19,9 @@ export default function Mentors() {
         )
     })
     return(
-        <section className="w-full">
-            <div className="w-full flex flex-col justify-items-center place-items-center">
-                <h1 className="text-center mb-8 font-bold text-lg">Meet the Mentors!</h1>
+        <section className="w-full mt-[8rem] mb-[4rem]">
+            <h1 className="text-center mb-[3rem] mt-[2rem] font-bold text-xl">Meet the Mentors!</h1>
+            <div className="w-full flex flex-col justify-items-center place-items-center md:grid md:grid-cols-2 md:-gap-x-[5rem]">
                 {Lecturers}       
             </div>
         </section>
