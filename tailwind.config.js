@@ -26,9 +26,6 @@ module.exports = {
         'indigo1' : '#7986CB',
         'indigo2' : '#9FA8DA'
       }, 
-      backgroundImage:{
-        'bg-pricing': "url('../public/vectors/images/hand.webp')"
-      },
     },
   },
   plugins: [],

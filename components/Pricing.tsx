@@ -9,9 +9,9 @@ import Remove from '../public/vectors/images/remove.png'
 const Pricing = () => {
   
   return (
-    <div className="w-full h-full">
-        <div className="w-full bg-center bg-cover h-[5.8rem] lg:h-[20rem] bg-pricing">
-          <div className="w-full h-[5.8rem] lg:h-[20rem] bg-white/80 flex lg:gap-10 flex-col items-center justify-center gap-1">
+    <div className="w-full h-full py-5">
+        <div className="w-full bg-center bg-cover h-[6rem] lg:h-[20rem] bg-[url('../public/vectors/images/hand.webp')]">
+          <div className="w-full h-[6rem] lg:h-[20rem] bg-white/80 flex lg:gap-10 flex-col items-center justify-center gap-1">
             <div className="flex flex-col items-center justify-center gap-1 text-center lg:gap-8">
               <h2 className="font-bold lg:text-[2rem] text-xs">Schedule a 1:1 meeting with Our Consultant team</h2>
               <p className="lg:text-[1.2rem] text-xs ">Get a chance to interact with the team before enrolling
