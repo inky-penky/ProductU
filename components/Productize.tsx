@@ -30,20 +30,20 @@ export default function Productize() {
                     </Image>
                 </div>
             </div>
-            <div className="w-auto flex-col justify-between text-blue-800">
+            <div className="w-auto flex-col justify-between text-blue-800 md:flex md:flex-row md:-mb-[7.5rem] md:justify-around">
                 <div className="mb-16 text-center">
                     <h1 className="text-3xl mb-4">$1,23,000</h1>
-                    <p className="text-md mb-2">Average Salary for PM</p>
+                    <p className="text-md mb-2 md:w-[9.5rem]">Average Salary for PM</p>
                     <p className="text-sm">(Acc to Glassdoor)</p>
                 </div>
                 <div className="mb-16 text-center">
                     <h1 className="text-3xl mb-4">30%</h1>
-                    <p className="text-md mb-2">YOY growth of PM Salaries</p>
+                    <p className="text-md mb-2 md:w-[11rem]">YOY growth of PM Salaries</p>
                     <p className="text-sm">(Acc to Globenewswire)</p>
                 </div>
                 <div className=" mb-24 text-center">
                     <h1 className="text-3xl mb-4">30k+</h1>
-                    <p className="text-md mb-2">Job roles across PM roles in 2023</p>
+                    <p className="text-md mb-2 md:w-[11rem]">Job roles across PM roles in 2023</p>
                     <p className="text-sm">(Acc to Linkedln)</p>
                 </div>
             </div>
