@@ -1,45 +1,51 @@
 const Data = [
     {
         id : 1,
-        week: "Week 1",
+        module: "Module 1",
         title: "Introduction to Product management",
-        courses: [{id: 1, name: "What is Product Management?"}, {id: 2, name:"B2B, B2C, D2C"}, {id:3, name:"Cross-functional partners"},{id:4, name:"Differences between PM jobs across companies (anecdotes)"}, {id:5, name:"How to chose the right PM role?"}],
-        Assignment : "Assignment 1"
+        courses: [{id: 1, name: "What is PM?"}, {id: 2, name:"PM in B2B, B2C, and D2C industries"}, {id:3, name:"Assignment 1"}],
+        tag: "Case Studies on",
+        caseStudy : [{logoOne: "", logoTwo: ""}]
     },
     {
         id : 2,
-        week: "Week 2",
-        title: "Strategic understanding of the company",
-        courses: [{id: 1, name:"Understanding your company's mission and strategic goals?"}, {id:2, name:"Understanding your org/team goals and KPI's?"}, {id:3, name: "Market and competitors"}, {id: 4, name: "Connection product outcomes and business outcomes"}],
-        Assignment : "Assignment 2"
+        module: "Module 2",
+        title: "Strategic understanding of company",
+        courses: [{id: 1, name: "Role of PM in Strategic Decision making"}, {id: 2, name:"Frameworks and Tools used at work"}, {id:3, name:"Assignment 2"}],
+        tag: "Case Studies on",
+        caseStudy : [{logoOne: "", logoTwo: ""}]
     },
     {
         id : 3,
-        week: "Week 3",
-        title: "Problem Discovery",
-        courses: [{id:1, name: "User research"},{id: 2, name: "Customer journey maps"}, {id: 3, name:"Wireframing"}],
-        Assignment : "Assignment 3"
+        module: "Module 3",
+        title: "Defining the Product roadmap",
+        courses: [{id: 1, name: "Defining the Problem statement"}, {id: 2, name:"Design Thinking"}, {id: 3, name: "Rapid prototyping of solution"}, {id:4, name:"Assignment 3"}],
+        tag: "Case Studies on",
+        caseStudy : [{logoOne: "", logoTwo: ""}]
     },
     {
         id : 4,
-        week: "Week 4",
-        title: "Problem Framing",
-        courses: [{id:1, name: "Ideation & Validation"}, {id: 2, name: "Problem framing"}, {id: 3, name: "Hypothesis Building"}],
-        Assignment : "Assignment 4"
+        module: "Module 4",
+        title: "Design for Value",
+        courses: [{id: 1, name: "Understand the Value proposition"}, {id: 2, name: "Key parameters of product life cycle"}, {id:3, name:"Assignment 4"}],
+        tag: "Case Studies on",
+        caseStudy : [{logoOne: "", logoTwo: ""}]
     },
     {
         id : 5,
-        week: "Week 5",
-        title: "Designing & Building a Prototype",
-        courses: [{id: 1, name: "UX design principles"}, {id: 2, name: "Hypothesis Building"}, {id: 3, name: "Rapid prototyping"}],
-        Assignment : "Assignment 5"
+        module: "Module 5",
+        title: "Build your product at scale",
+        courses: [{id: 1, name: "Sentimental analysis"}, {id: 2, name:"A/B testing"}, {id:3, name:"Assignment 5"}],
+        tag: "Case Studies on",
+        caseStudy : [{logoOne: "", logoTwo: ""}]
     },
     {
         id : 6,
-        week: "Week 6",
-        title: "Success Metrics & Experimentation",
-        courses: [{id: 1, name: "understanding metrics"}, {id: 2, name: "Choosing what to measure"}, {id: 3, name: "Experimentation"}],
-        Assignment : "Assignment 6"
+        module: "Module 6",
+        title: "Write a Hire worthy case study",
+        courses: [{id: 1, name: "1:1 review of Capstone project from your mentor"}, {id: 2, name:"Prepare a World class resume!"}],
+        tag: "Get interviews from",
+        caseStudy : [{logoOne: "", logoTwo: ""}]
     }
 ]
 export default Data

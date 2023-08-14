@@ -50,7 +50,7 @@ export const Carousel = () =>{
             <Slider {...settings}>
             {carousel.map((item, index) => (
                 <div className="flex pl-5 lg:pl-10" key={index}>
-                    <div className="flex flex-col items-center justify-center gap-5 text-center border-4 border-blue-100 h-[24rem] pt-5 lg:h-[28.5rem] lg:pt-10 rounded-xl">
+                    <div className="flex flex-col items-center gap-5 text-center border-4 border-blue-100 h-[24rem] pt-5 lg:h-[28.5rem] lg:pt-10 rounded-xl">
                         <div className="">
                             <Image src={item.icon} width={100} height={1} alt="" />
                         </div>
