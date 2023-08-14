@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       screens:{ 
-        'sm': '640px',
+        'sm': '480px',
         'md': '768px',
         'lg': '1024px',
         'xl': '1280px',
@@ -26,8 +26,13 @@ module.exports = {
         'indigo1' : '#7986CB',
         'indigo2' : '#9FA8DA'
       }, 
+      backgroundImage:{
+        'hero': "url('../public/vectors/images/bg.png')"
+      },
+      fontFamily:{
+        "IBM" : ['IBM Plex Sans', 'sans-serif']
+      }
     },
   },
   plugins: [],
 }
-
