@@ -10,10 +10,10 @@ import Pricing from "../components/Pricing"
 
 const App = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden ">
       <Hero />
       <Productize/>
-      <ToLearn/>
+      {/* <ToLearn/> */}
       <Mentors/>
       <Whyus />
       <Pricing />

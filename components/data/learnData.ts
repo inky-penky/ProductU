@@ -17,6 +17,7 @@ const Data = [
         courses: [{id: 1, name: "What is PM?"}, {id: 2, name:"PM in B2B, B2C, and D2C industries"}, {id:3, name:"Assignment 1"}],
         tag: "Case Studies on",
         caseStudy : [netflix, bereal]
+        caseStudy : [{logoOne: "", logoTwo: ""}]
     },
     {
         id : 2,
@@ -25,6 +26,7 @@ const Data = [
         courses: [{id: 1, name: "Role of PM in Strategic Decision making"}, {id: 2, name:"Frameworks and Tools used at work"}, {id:3, name:"Assignment 2"}],
         tag: "Case Studies on",
         caseStudy : [bumble, tinder]
+        caseStudy : [{logoOne: "", logoTwo: ""}]
     },
     {
         id : 3,
@@ -33,6 +35,7 @@ const Data = [
         courses: [{id: 1, name: "Defining the Problem statement"}, {id: 2, name:"Design Thinking"}, {id: 3, name: "Rapid prototyping of solution"}, {id:4, name:"Assignment 3"}],
         tag: "Case Studies on",
         caseStudy : [gmaps, cowin]
+        caseStudy : [{logoOne: "", logoTwo: ""}]
     },
     {
         id : 4,
@@ -41,6 +44,7 @@ const Data = [
         courses: [{id: 1, name: "Understand the Value proposition"}, {id: 2, name: "Key parameters of product life cycle"}, {id:3, name:"Assignment 4"}],
         tag: "Case Studies on",
         caseStudy : [discord]
+        caseStudy : [{logoOne: "", logoTwo: ""}]
     },
     {
         id : 5,
@@ -49,6 +53,7 @@ const Data = [
         courses: [{id: 1, name: "Sentimental analysis"}, {id: 2, name:"A/B testing"}, {id:3, name:"Assignment 5"}],
         tag: "Case Studies on",
         caseStudy : [instagram, discord]
+        caseStudy : [{logoOne: "", logoTwo: ""}]
     },
     {
         id : 6,
@@ -57,6 +62,7 @@ const Data = [
         courses: [{id: 1, name: "1:1 review of Capstone project from your mentor"}, {id: 2, name:"Prepare a World class resume!"}],
         tag: "Get interviews from",
         caseStudy : [micro, google]
+        caseStudy : [{logoOne: "", logoTwo: ""}]
     }
 ]
 export default Data

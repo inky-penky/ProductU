@@ -8,6 +8,10 @@ export default function ToLearn() {
                 <div className="tracking-wider pl-5 mx-[1rem] p-[1.3rem] pb-8 mb-7 w-[20rem] h-[16.35rem] rounded-[1.5rem] bg-gradient-to-r from-blue-100 to-violet-100 md:w-[15.35rem] md:h-[18.35rem] md:mx-[0.35rem]">
                 <h1 className="m-0 mb-2 font-extralight text-sm">{data.module}</h1>
                 <h1 className="m-0 mb-4 w-full font-semibold text-sm">{data.title}</h1>
+            <div key={index}>
+                <div className="tracking-wider pl-5 mx-[1rem] p-6 pb-8 mb-6 w-[18rem] h-[27rem] rounded-[1.5rem] bg-gradient-to-r from-blue-100 to-violet-100 md:w-[14rem]">
+                <h1 className="m-0 mb-2 text-sm font-extralight">{data.week}</h1>
+                <h1 className="w-full m-0 mb-4 text-sm font-semibold">{data.title}</h1>
                 <ul className="pl-2">
                     {
                         (data.courses).map((topic =>{
@@ -27,6 +31,7 @@ export default function ToLearn() {
                         }))}
                     </div>
                 </div>
+                <h1 className="pl-5 font-semibold">{data.Assignment}</h1>
                 </div>
             </div>
         )
