@@ -10,7 +10,7 @@ const Pricing = () => {
   
   return (
     <div className="w-full h-full py-5">
-        <div className="w-full bg-center bg-cover h-[6rem] lg:h-[20rem] bg-[url('../public/vectors/images/hand.webp')]">
+        <div id='contact' className="w-full bg-center bg-cover h-[6rem] lg:h-[20rem] bg-[url('../public/vectors/images/hand.webp')]">
           <div className="w-full h-[6rem] lg:h-[20rem] bg-white/80 flex lg:gap-10 flex-col items-center justify-center gap-1">
             <div className="flex flex-col items-center justify-center gap-1 text-center lg:gap-8">
               <h2 className="font-bold lg:text-[2rem] text-xs">Schedule a 1:1 meeting with Our Consultant team</h2>
@@ -19,12 +19,12 @@ const Pricing = () => {
               </p>
             </div>
             <div className="flex items-center justify-center text-center">
-              <div className="lg:py-3 text-white bg-blue-900 rounded-lg lg:px-7 lg:text-[1.1rem] text-xs py-1 px-2">Book now</div>
+              <a href='https://calendly.com/farheen-zeya/30min?month=2023-08' target='_blank' className="lg:py-3 text-white bg-blue-900 rounded-lg lg:px-7 lg:text-[1.1rem] text-xs py-1 px-2 cursor-pointer">Book now</a>
             </div>
           </div>
         </div>
         
-        <div className="my-[2rem] lg:my-[5rem] w-full">
+        <div className="my-[2rem] lg:my-[5rem] w-full" id='pricing'>
           <div className='pb-5 lg:pb-10' >
             <h1 className='text-center text-[1.5rem] lg:text-[2.5rem] '>Programme Fees</h1>
           </div>

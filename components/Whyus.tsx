@@ -9,7 +9,7 @@ import { Carousel } from "./Carousel";
 function Whyus() {
   
   return (
-    <div className="flex flex-col py-5 text-center lg:py-20 lg:gap-16">
+    <div className="flex flex-col py-5 text-center lg:py-20 lg:gap-16" id="whyUs">
       <h1 className=" text-[1.5rem] lg:text-[2.5rem]">Why us?</h1>
       <Carousel />
       <div className="">
