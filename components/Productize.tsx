@@ -7,7 +7,7 @@ import meta from "../public/vectors/images/Meta.png"
 export default function Productize() {
     return(
         <section>
-            <h1 className="text-center m-0 mb-24 text-2xl">Product<span className="text-neutral-500">ize </span>U<span className="text-neutral-500">'rself and <br /> <br /> Land Your Dream Job in Top Companies</span></h1>
+            <h1 className="font-bold text-center m-0 mb-24 text-2xl">Product<span className="text-neutral-500">ize </span>U<span className="text-neutral-500 font-semibold">'rself and <br /> <br /> Land Your Dream Job in Top Companies</span></h1>
             <div className="w-auto h-auto flex flex-col items-center justify-around mb-12 md:flex md:flex-row md:left-0">
                 <div className="mb-8">
                     <Image src={ama} alt="Amazon Logo" width={150}>
@@ -33,7 +33,7 @@ export default function Productize() {
             <div className="w-auto flex-col justify-between text-blue-800 md:flex md:flex-row md:-mb-[7.5rem] md:justify-around">
                 <div className="mb-16 text-center">
                     <h1 className="text-3xl mb-4">$1,23,000</h1>
-                    <p className="text-md mb-2 md:w-[9.5rem]">Average Salary for PM</p>
+                    <p className="text-md mb-2 md:w-[8.5rem]">Average Salary for PM</p>
                     <p className="text-sm">(Acc to Glassdoor)</p>
                 </div>
                 <div className="mb-16 text-center">
