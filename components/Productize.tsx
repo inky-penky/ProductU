@@ -24,7 +24,7 @@ export default function Productize() {
         }
         if (!inView) {
             animation1.start({
-                x : "-150vh"
+                x : "-80vh"
             }) 
         }
     })
