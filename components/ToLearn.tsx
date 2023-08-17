@@ -24,7 +24,7 @@ export default function ToLearn() {
                         <div className="mt-[0.5rem] w-[11.2rem] flex justify-between">
                             {(data.caseStudy).map((logo =>{
                                 return(
-                                    <div><Image src={logo} alt="logo" width={65}/></div>
+                                    <div key={logo.id}><Image src={logo.logo} alt="logo" width={65}/></div>
                                 )
                             }))}
                         </div>
