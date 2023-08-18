@@ -6,9 +6,8 @@ import Fade from "react-reveal/Fade"
 export default function Mentors() {
     const Lecturers = Data.map((Mentor, index)=>{
         return(
-                <Fade duration={2300}>
                     <div key={index} className="duration-500 cursor-pointer group-hover:scale-[0.65] hover:!scale-100 w-[18rem] h-[25.5rem] mb-4 border-2 hover:shadow-lg hover:shadow-indigo-100 border-blue-50 py-[2rem] px-12 rounded-[1.5rem] flex flex-col justify-center md:m-[0.5rem] md:mb-[3rem] md:w-auto">
-                        <div className="mb-14 flex justify-items-center">
+                        <div className="mb-14 flex justify-center">
                             <Image className="border-teal-100 border-[1rem] rounded-full" src={Mentor.image} alt="" width={130}></Image>           
                         </div>
                         <div className="flex flex-col justify-items-center place-items-center">
@@ -19,7 +18,6 @@ export default function Mentors() {
                             </div>
                         </div>
                     </div>
-                </Fade>
         )
     })
     return(
