@@ -1,3 +1,10 @@
+import netflix from "../mentorImage/netflix.png"
+import bereal from "../mentorImage/bereal.png"
+import bumble from "../mentorImage/bumble.png"
+import tinder from "../mentorImage/tinder.png"
+import gmaps from "../mentorImage/googlemaps.png"
+import cowin from "../mentorImage/cowin.png"
+import discord from "../mentorImage/discord.png"
 import instagram from "../mentorImage/instagram.png"
 import micro from "../mentorImage/microsoft.png"
 import google from "../mentorImage/google.png"
@@ -41,7 +48,7 @@ const Data = [
         title: "Build your product at scale",
         courses: [{id: 1, name: "Sentimental analysis"}, {id: 2, name:"A/B testing"}, {id: 3, name:"Assignment 5"}],
         tag: "Case Studies on",
-        caseStudy : [{id : 1, logo : instagram}, {id : 1, logo : discord}]
+        caseStudy : [{id : 1, logo : instagram}, {id : 2, logo : discord}]
     },
     {
         id : 6,
