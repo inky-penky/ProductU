@@ -1,9 +1,28 @@
 import Data from "./data/MentorData"
 import Image from "next/image"
-import Fade from "react-reveal/Fade" 
+import { useEffect } from "react"
+import { useInView } from "react-intersection-observer"
+import { motion, useAnimation } from "framer-motion"
 
 
 export default function Mentors() {
+    const [ref, inView] = useInView({triggerOnce: true})
+    const animation1 = useAnimation()
+    useEffect(()=>{
+        if (inView) {
+            animation1.start({
+                x : 0,
+                transition : {
+                    type : "easeout", duration : 1.3, bounce : 0.3
+                }
+            })
+        }
+        if (!inView) {
+            animation1.start({
+                x : "-50vh"
+            }) 
+        }
+    })
     const Lecturers = Data.map((Mentor, index)=>{
         return(
                     <div key={index} className="duration-500 cursor-pointer group-hover:scale-[0.65] hover:!scale-100 w-[18rem] h-[25.5rem] mb-4 border-2 hover:shadow-lg hover:shadow-indigo-100 border-blue-50 py-[2rem] px-12 rounded-[1.5rem] flex flex-col justify-center md:m-[0.5rem] md:mb-[3rem] md:w-auto">
@@ -21,11 +40,12 @@ export default function Mentors() {
         )
     })
     return(
-        <section className="w-full mt-[5.5rem] mb-[4rem] md:px-[1.35rem]">
+        <motion.section ref={ref} animate={animation1} 
+            className="w-full mt-[5.5rem] mb-[4rem] md:px-[1.35rem]">
             <h1 className="text-center mb-[3rem] mt-[2rem] font-bold text-[1.6rem]">Meet the Mentors!</h1>
             <div className="group w-full flex flex-col justify-items-center place-items-center md:grid md:grid-cols-3 md:-gap-x-[5rem]">
                 {Lecturers}       
             </div>
-        </section>
+        </motion.section>
     )
 }

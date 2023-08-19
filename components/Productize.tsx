@@ -17,7 +17,7 @@ export default function Productize() {
             animation1.start({
                 x : 0,
                 transition : {
-                    type : "easeout", duration : 1, bounce : 0.3
+                    type : "easeout", duration : 1.3, bounce : 0.3
                 }
             })
         }
@@ -28,7 +28,7 @@ export default function Productize() {
         }
     })
     return(
-        <section>
+        <motion.section animate={animation1} ref={ref}>
             <div>
                 <h1 className="font-bold text-center m-0 mb-24 text-[1.55rem] md:text-[1.75rem]">Product<span className="text-neutral-500">ize </span>U<span className="text-neutral-500 font-semibold">'rself and <br /> Land Your Dream Job in Top Companies</span></h1>
             </div>
@@ -54,8 +54,7 @@ export default function Productize() {
                     </Image>
                 </div>
             </div>
-            <motion.div ref={ref} className="group w-auto flex-col justify-between text-blue-800 md:flex md:flex-row md:-mb-[7.5rem] md:justify-around"
-                animate={animation1} >
+            <div className="group w-auto flex-col justify-between text-blue-800 md:flex md:flex-row md:-mb-[7.5rem] md:justify-around">
                 <div className="mb-16 text-center">
                     <h1 className="text-3xl mb-4">$1,23,000</h1>
                     <p className="text-md mb-2 md:w-[8.5rem]">Average Salary for PM</p>
@@ -71,7 +70,7 @@ export default function Productize() {
                     <p className="text-md mb-2 md:w-[11rem]">Job roles across PM roles in 2023</p>
                     <p className="text-sm">(Acc to Linkedln)</p>
                 </div>
-            </motion.div>
-        </section>
+            </div>
+        </motion.section>
     )
 }

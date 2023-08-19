@@ -1,8 +1,27 @@
 import Image from "next/image"
 import Data from "./data/learnData"
-import Fade from "react-reveal/Fade"
+import { useEffect } from "react"
+import { useInView } from "react-intersection-observer"
+import { motion, useAnimation } from "framer-motion"
 
 export default function ToLearn() {
+  const [ref, inView] = useInView({ triggerOnce : true })
+  const animation1 = useAnimation()
+    useEffect(()=>{
+        if (inView) {
+            animation1.start({
+                y : 0,
+                transition : {
+                    type : "easeout", duration : 2, bounce : 0.3
+                }
+            })
+        }
+        if (!inView) {
+            animation1.start({
+                y : "-30vh"
+            }) 
+        }
+    })
     const course = Data.map((data, index)=>{
         return(
                 <div key={index}>
@@ -35,11 +54,12 @@ export default function ToLearn() {
         )
     })
     return(
-        <section className="flex flex-col justify-between items-center m-0 mt-[7.25rem] w-full">
+        <motion.section ref={ref} animate={animation1} 
+            className="flex flex-col justify-between items-center m-0 mt-[7.25rem] w-full">
             <h1 className="mb-[3rem] font-semibold text-center text-[1.75rem]">What Will You Learn</h1>
             <div className="group flex flex-col justify-between items-center md:grid md:grid-cols-3 md:-gap-x-[1.5rem]">
             {course}
             </div>
-        </section>
+        </motion.section>
     )
 }
