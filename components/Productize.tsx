@@ -23,14 +23,14 @@ export default function Productize() {
         }
         if (!inView) {
             animation1.start({
-                x : "-80vh"
+                x : "-50vh"
             }) 
         }
     })
     return(
         <section>
             <div>
-                <h1 className="font-bold text-center m-0 mb-24 text-2xl">Product<span className="text-neutral-500">ize </span>U<span className="text-neutral-500 font-semibold">'rself and <br /> <br /> Land Your Dream Job in Top Companies</span></h1>
+                <h1 className="font-bold text-center m-0 mb-24 text-[1.55rem] md:text-[1.75rem]">Product<span className="text-neutral-500">ize </span>U<span className="text-neutral-500 font-semibold">'rself and <br /> Land Your Dream Job in Top Companies</span></h1>
             </div>
             <div className="group w-auto h-auto flex flex-col items-center justify-around mb-12 md:flex md:flex-row md:left-0">
                 <div className="mb-8 logo">

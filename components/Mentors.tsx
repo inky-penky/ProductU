@@ -22,7 +22,7 @@ export default function Mentors() {
     })
     return(
         <section className="w-full mt-[5.5rem] mb-[4rem] md:px-[1.35rem]">
-            <h1 className="text-center mb-[3rem] mt-[2rem] font-bold text-xl">Meet the Mentors!</h1>
+            <h1 className="text-center mb-[3rem] mt-[2rem] font-bold text-[1.6rem]">Meet the Mentors!</h1>
             <div className="group w-full flex flex-col justify-items-center place-items-center md:grid md:grid-cols-3 md:-gap-x-[5rem]">
                 {Lecturers}       
             </div>
