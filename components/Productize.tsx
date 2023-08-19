@@ -4,12 +4,36 @@ import micro from "../public/vectors/images/Microsoft.png"
 import google from "../public/vectors/images/Google.png"
 import tweet from "../public/vectors/images/Twitter.png"
 import meta from "../public/vectors/images/Meta.png"
+import { motion, useAnimation }  from "framer-motion"
+import {useInView} from 'react-intersection-observer'
+import { useEffect } from "react"
+
+
 export default function Productize() {
+    const [ref, inView] = useInView({triggerOnce: true})
+    const animation1 = useAnimation()
+    useEffect(()=>{
+        if (inView) {
+            animation1.start({
+                x : 0,
+                transition : {
+                    type : "easeout", duration : 1, bounce : 0.3
+                }
+            })
+        }
+        if (!inView) {
+            animation1.start({
+                x : "-80vh"
+            }) 
+        }
+    })
     return(
         <section>
-            <h1 className="font-bold text-center m-0 mb-24 text-2xl">Product<span className="text-neutral-500">ize </span>U<span className="text-neutral-500 font-semibold">'rself and <br /> <br /> Land Your Dream Job in Top Companies</span></h1>
-            <div className="w-auto h-auto flex flex-col items-center justify-around mb-12 md:flex md:flex-row md:left-0">
-                <div className="mb-8">
+            <div>
+                <h1 className="font-bold text-center m-0 mb-24 text-2xl">Product<span className="text-neutral-500">ize </span>U<span className="text-neutral-500 font-semibold">'rself and <br /> <br /> Land Your Dream Job in Top Companies</span></h1>
+            </div>
+            <div className="group w-auto h-auto flex flex-col items-center justify-around mb-12 md:flex md:flex-row md:left-0">
+                <div className="mb-8 logo">
                     <Image src={ama} alt="Amazon Logo" width={150}>
                     </Image>
                 </div>
@@ -30,7 +54,8 @@ export default function Productize() {
                     </Image>
                 </div>
             </div>
-            <div className="w-auto flex-col justify-between text-blue-800 md:flex md:flex-row md:-mb-[7.5rem] md:justify-around">
+            <motion.div ref={ref} className="group w-auto flex-col justify-between text-blue-800 md:flex md:flex-row md:-mb-[7.5rem] md:justify-around"
+                animate={animation1} >
                 <div className="mb-16 text-center">
                     <h1 className="text-3xl mb-4">$1,23,000</h1>
                     <p className="text-md mb-2 md:w-[8.5rem]">Average Salary for PM</p>
@@ -46,7 +71,7 @@ export default function Productize() {
                     <p className="text-md mb-2 md:w-[11rem]">Job roles across PM roles in 2023</p>
                     <p className="text-sm">(Acc to Linkedln)</p>
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 }

@@ -1,10 +1,11 @@
 import Image from "next/image"
 import Data from "./data/learnData"
+import Fade from "react-reveal/Fade"
 
 export default function ToLearn() {
     const course = Data.map((data, index)=>{
         return(
-            <div key={index} id="courses">
+            <div key={data.id} id="courses">
                 <div className="tracking-wider pl-5 mx-[1rem] p-[1.3rem] pb-8 mb-7 w-[20rem] h-[16.35rem] rounded-[1.5rem] bg-gradient-to-r from-blue-100 to-violet-100 md:w-[15.35rem] md:h-[18.35rem] md:mx-[0.35rem]">
                 <h1 className="m-0 mb-2 text-sm font-extralight">{data.module}</h1>
                 <h1 className="w-full m-0 mb-4 text-sm font-semibold">{data.title}</h1>
@@ -34,7 +35,7 @@ export default function ToLearn() {
     return(
         <section className="flex flex-col justify-between items-center m-0 mt-[7.25rem] w-full">
             <h1 className="mb-[3rem] font-semibold text-center text-xl">What Will You Learn</h1>
-            <div className="flex flex-col justify-between items-center md:grid md:grid-cols-3 md:-gap-x-[1.5rem]">
+            <div className="group flex flex-col justify-between items-center md:grid md:grid-cols-3 md:-gap-x-[1.5rem]">
             {course}
             </div>
         </section>
