@@ -11,7 +11,7 @@ import Logo from '../public/vectors/images/Frame 241productULogo.png'
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
-  const handleClick = (index) => {
+  const handleClick = () => {
     setToggle(prevToggle => !prevToggle);
   }
 
@@ -32,10 +32,10 @@ const Navbar = () => {
           </div>
 
           <div className={`flex flex-col text-center gap-5 w-screen bg-white text-blue-500 ${toggle? 'block': 'hidden'}`}>
-            <a href='#courses' className=''>Course Details</a>
-            <a href='#whyUs' className=''>Why Us?</a>
-            <a href='#contact' className=''>Contact</a>
-            <a href='#pricing' className=''>Pricing</a>
+            <a href='#courses' className='' onClick={handleClick}>Course Details</a>
+            <a href='#whyUs' className='' onClick={handleClick}>Why Us?</a>
+            <a href='#contact' className='' onClick={handleClick}>Contact</a>
+            <a href='#pricing' className='' onClick={handleClick}>Pricing</a>
           </div>
         </div>
  
