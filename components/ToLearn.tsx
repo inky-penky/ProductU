@@ -26,17 +26,19 @@ export default function ToLearn() {
         return(
                 <div key={index}>
                     <div className="duration-500 cursor-pointer md:group-hover:blur-sm md:hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 tracking-wider pl-5 mx-[1rem] p-[1.3rem] pb-8 mb-7 w-[20rem] h-[16.35rem] rounded-[1.5rem] bg-gradient-to-r from-blue-100 to-violet-100 md:w-[15.35rem] md:h-[18.35rem] md:mx-[0.35rem]">
-                    <h1 className="m-0 mb-2 text-sm font-extralight">{data.module}</h1>
-                    <h1 className="w-full m-0 mb-4 text-sm font-semibold">{data.title}</h1>
-                    <ul className="pl-2">
-                        {
-                            (data.courses).map((topic =>{
-                                return(
-                                    <li key={topic.id} className="m-0 mb-1 text-xs font-extralight">{topic.name}</li>
-                                )
-                                }))
-                        }
-                    </ul>
+                        <h1 className="m-0 mb-2 text-sm font-extralight">{data.module}</h1>
+                        <h1 className="w-full m-0 mb-4 text-sm font-semibold">{data.title}</h1>
+                        <ul className="pl-2">
+                            {
+                                (data.courses).map((topic =>{
+                                    return(
+                                        <li key={topic.id} className="m-0 mb-1 text-xs font-extralight">{topic.name}</li>
+                                    )
+                                    }))
+                            }
+                        </ul>
+                    </div>
+                    
                     <div className="border-t-2 border-gray-500 w-full mt-[2rem]">
                         {data.tag}
                         <div className="mt-[0.5rem] w-[18rem] flex justify-between md:w-[13.5rem]">
@@ -47,7 +49,7 @@ export default function ToLearn() {
                             }))}
                         </div>
                     </div>
-                    </div>
+                    
                 </div>
         )
     })
