@@ -13,7 +13,7 @@ const App = () => {
     <div className="overflow-x-hidden ">
       <Hero />
       <Productize/>
-      {/* <ToLearn/> */}
+      <ToLearn/>
       <Mentors/>
       <Whyus />
       <Pricing />

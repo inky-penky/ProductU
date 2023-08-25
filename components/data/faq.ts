@@ -7,12 +7,12 @@ export const faq = [
     },
     {
         question: 'What is the procedure to apply?',
-        answer: `Step 1 : Make sure you have read all the details of program 
+        answer: `Step 1 : Make sure you have read all the details of program.
 
-                Step 2 : Submit your details for the application using the link 
+                Step 2 : Submit your details for the application using the link. 
         
                 Step 3 : After submission you'll get a link to schedule a call 
-                with us for further instructions`
+                with us for further instructions.`
     },
     {
         question: 'Do i receive a certificate?',
@@ -25,10 +25,10 @@ export const faq = [
                 after the program completion : 
 
                 1. Access to the course materials which include Live lectures, 
-                PPT's, Cheat sheets, Writeups etc 
+                PPT's, Cheat sheets, Writeups etc. 
         
-                2. Access to the community events and classes 
+                2. Access to the community events and classes. 
         
-                3. Access to slack community`
+                3. Access to slack community.`
     }
 ]
