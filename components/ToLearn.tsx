@@ -43,7 +43,7 @@ export default function ToLearn() {
                             {data.tag}
                             <div className="mt-[0.5rem] -ml-[0.125rem] md:-ml-[0.25rem] w-[18rem] flex justify-between md:w-[13.5rem]">
                                 {(data.caseStudy).map((logo =>{
-                    <div className="duration-500 cursor-pointer md:group-hover:blur-sm md:hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 tracking-wider pl-5 mx-[1rem] p-[1.3rem] pb-8 mb-7 w-[20rem] h-[16.35rem] rounded-[1.5rem] bg-gradient-to-r from-blue-100 to-violet-100 md:w-[15.35rem] md:h-[18.35rem] md:mx-[0.35rem]">
+                    <div className="duration-500 cursor-pointer md:group-hover:blur-sm md:hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 tracking-wider pl-5 mx-[1rem] p-[1.3rem] pb-8 mb-7 w-[20rem] h-[16.35rem] rounded-[1.5rem] bg-gradient-to-r from-blue-100 to-violet-100 md:w-[15.35rem] md:h-[18.35rem] md:mx-[0.35rem] lg:mx-[1.5rem]">
                         <h1 className="m-0 mb-2 text-sm font-extralight">{data.module}</h1>
                         <h1 className="w-full m-0 mb-4 text-sm font-semibold">{data.title}</h1>
                         <ul className="pl-2">
