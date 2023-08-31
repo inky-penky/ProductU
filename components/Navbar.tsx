@@ -4,7 +4,7 @@ import Image from 'next/image'
 import MobileMenu from '../public/vectors/svg/menu.svg'
 import CancelMenu from '../public/vectors/svg/x.svg'
 import Logo from '../public/vectors/images/Frame 241productULogo.png'
-
+import Link from 'next/link'
 
 
 
@@ -17,9 +17,11 @@ const Navbar = () => {
 
   return (
     <div className='z-30 flex justify-between bg-white items-center w-full py-[1.5rem] lg:px-[5.3rem] fixed'>
-        <a href='/' className='lg:w-[13rem] w-[8rem] cursor-pointer'>
-            <Image src={Logo} alt='productU_logo' />
-        </a>
+        <Link href="/" legacyBehavior>
+          <a className='lg:w-[13rem] w-[8rem] cursor-pointer'>
+              <Image src={Logo} alt='productU_logo' />
+          </a>
+        </Link>
 
         <div className='flex flex-col justify-between lg:hidden'>
           <div className='flex justify-end'>

@@ -37,16 +37,16 @@ export default function ToLearn() {
                                     }))
                             }
                         </ul>
-                    </div>
                     
-                    <div className="border-t-2 border-gray-500 w-full mt-[2rem]">
-                        {data.tag}
-                        <div className="mt-[0.5rem] w-[18rem] flex justify-between md:w-[13.5rem]">
-                            {(data.caseStudy).map((logo =>{
-                                return(
-                                    <div className="w-[9rem]" key={logo.id}><Image className="w-[5.5rem] mr-[3rem]" src={logo.logo} alt="logo"/></div>
-                                )
-                            }))}
+                        <div className="border-t-2 border-gray-500 w-full mt-[2rem]">
+                            {data.tag}
+                            <div className="mt-[0.5rem] w-[18rem] flex justify-between md:w-[13.5rem]">
+                                {(data.caseStudy).map((logo =>{
+                                    return(
+                                        <div className="w-[9rem]" key={logo.id}><Image className="w-[5.5rem] mr-[3rem]" src={logo.logo} alt="logo"/></div>
+                                        )
+                                    }))}
+                            </div>
                         </div>
                     </div>
                     
